@@ -174,6 +174,21 @@ h6,
 
 
 /*** Navbar ***/
+
+@media (max-width: 992px) {
+    .navbar{
+        background: rgba(169, 76, 169, 0.723);
+        color: white !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .navbar .navbar-nav .nav-item.nav-link{
+        color: white !important;
+        
+    }
+    
+}
+
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -211,6 +226,8 @@ h6,
 .navbar-dark .navbar-toggler {
     color: var(--primary) !important;
     border-color: var(--primary) !important;
+    color: white !important;
+    border-color: white !important;
 }
 
 
@@ -275,6 +292,18 @@ h6,
 
 
 /*** Carousel ***/
+
+@media (max-width: 576px) {
+    .carousel-inner{
+        height: 40vh;
+    }
+    .carousel-item{
+        height: 100%;
+    }
+    
+}
+
+
 .carousel-caption {
     top: 0;
     left: 0;
@@ -378,8 +407,8 @@ h6,
     font-weight: 700;
     line-height: 1.2;
     font-size: 1rem;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
+    margin-block-start: .33em;
+    margin-block-end: .33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -469,7 +498,7 @@ h6,
     font-weight: 700;
     line-height: 1.2;
     font-size: 1rem;
-    margin-block-start: 2.33em;
+    margin-block-start: .33em;
     margin-block-end: 2.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -687,7 +716,7 @@ h6,
 
 .welcome {
     position: relative;
-    margin: 2rem 0 0 0;
+    margin: 0 0 0 0;
     width: 100%;
     height: 100%;
     padding-right: 0;
@@ -720,7 +749,7 @@ h6,
 
 
 .free-quote {
-    padding: 5rem 0;
+    padding: 3rem 1rem;
     color: #fff;
 }
 .free-quote h5, 
@@ -806,6 +835,22 @@ h6,
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
 }
+
+.testimonial-item h4{
+    font-size: 1.2rem;
+}
+.testimonial-item small{
+    font-size: .8rem;
+}
+.cut-word-with-elipses{
+    display: block;
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
 
 
 /*** Team ***/
