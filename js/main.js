@@ -79,6 +79,11 @@
         autoplay: true,
         smartSpeed: 1500,
         dots: true,
+        nav: true,
+        navText : [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
         loop: true,
         center: true,
         responsive: {
@@ -129,7 +134,7 @@
         margin: 25,
         loop: true,
         center: true,
-        dots: false,
+        dots: true,
         nav: true,
         navText : [
             '<i class="bi bi-chevron-left"></i>',

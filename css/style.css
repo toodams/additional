@@ -207,11 +207,16 @@ h6,
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark);
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+.sticky-top.navbar-dark .navbar-nav .nav-link:hover,
+.sticky-top.navbar-dark .navbar-nav .nav-link.active {
+    color: #faaf40;
 }
 
 .navbar-dark .navbar-brand {
@@ -238,6 +243,8 @@ h6,
     .sticky-top.navbar-dark {
         position: relative;
         background: #FFFFFF;
+        background: rgba(169, 76, 169, 0.99);
+        
     }
 
     .navbar-dark .navbar-nav .nav-link,
@@ -245,6 +252,7 @@ h6,
     .sticky-top.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         color: var(--dark);
+        color: white;
     }
 
     .navbar-dark .navbar-brand h1 {
@@ -265,6 +273,7 @@ h6,
     .sticky-top.navbar-dark {
         position: fixed;
         background: #FFFFFF;
+        background: rgba(169, 76, 169, 0.99);
     }
 
     .navbar-dark .navbar-nav .nav-link::before {
@@ -276,6 +285,10 @@ h6,
         left: 50%;
         background: var(--primary);
         transition: .5s;
+    }
+    .sticky-top.navbar-dark .navbar-nav .nav-link::before {
+        
+        background: #faaf40;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover::before,
@@ -626,6 +639,63 @@ h6,
 
 
 /*** Project ***/
+.project-carousel .owl-nav .owl-prev,
+.project-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ded5d5;
+    border-radius: 55px;
+    font-size: 3rem;
+    transition: .5s;
+    background: var(--primary);
+    border-radius: 50px;
+    box-shadow: -3px 0px 15px 1px rgb(110 66 11);
+}
+.project-carousel .owl-nav .owl-prev{
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.project-carousel .owl-nav .owl-next{
+    top: 45%;
+    transform: translateY(-50%);
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.project-carousel .owl-nav .owl-prev:hover,
+.project-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+.project-carousel .owl-dots {
+    margin-top: -15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.project-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.project-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
 .project-item {
     position: relative;
     border-radius: 8px;
@@ -664,7 +734,7 @@ h6,
     background: var(--primary);
     color: #fff;
 }
-
+/* 
 .project-carousel .owl-nav {
     position: absolute;
     top: -100px;
@@ -691,10 +761,10 @@ h6,
 .project-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
     color: #FFFFFF;
-}
+} */
 
 @media (max-width: 768px) {
-    .project-carousel .owl-nav {
+    /* .project-carousel .owl-nav {
         top: -46px;
         right: auto;
         left: 50%;
@@ -707,7 +777,7 @@ h6,
         width: 45px;
         height: 45px;
         font-size: 20px;
-    }
+    } */
 }
 
 
@@ -768,7 +838,7 @@ h6,
 }
 .free-quote .form-area {
     background-color: #f4f2f5 !important;
-    background-color: #d8c8e0 !important;
+    background-color: #d8c8e000 !important;
     margin: 16px auto !important;
 }
 @media (max-width: 767.98px) {
@@ -779,19 +849,25 @@ h6,
 .free-quote .form-area form input,
 .free-quote .form-area form select,
 .free-quote .form-area form textarea {
-    color: #dbd9d9 !important;
-    background: var(--secondary) !important;
-    background: #632a02 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
 }
 .free-quote .form-area form select option {
-    color: #ffffff !important;
-    background: var(--primary) !important;
+    color: #000000 !important;
+    background: #ffffff !important;
 }
 .free-quote .form-area form input::placeholder,
 .free-quote .form-area form textarea::placeholder {
+    color: #000000 !important;
+    background: #ffffff !important;
+}
+.free-quote #submit_quote {
+    background: #b200ff;
+    border: 1px solid transparent !important;
     color: #dbd9d9 !important;
 }
 .free-quote #submit_quote:hover {
+    background: var(--dark);
     background: var(--light);
     color: #dbd9d9 !important;
 }
@@ -802,6 +878,31 @@ h6,
 
 
 /*** Testimonial ***/
+
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9b0399;
+    border-radius: 55px;
+    font-size: 3rem;
+    transition: .5s;
+}
+.testimonial-carousel .owl-nav .owl-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.testimonial-carousel .owl-nav .owl-next{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
 .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
