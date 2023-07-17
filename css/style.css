@@ -489,9 +489,7 @@ h6,
 
 
 /*** Service ***/
-.service-bg {
-    background: var(--secondary);
-}
+
 
 .service-bg h1{
     color: #fbfcff;
@@ -818,6 +816,10 @@ h6,
 }
 
 
+.project-training img{
+    width: 50px !important;
+    display: unset !important;
+}
 
 
 
