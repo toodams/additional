@@ -22,21 +22,21 @@
     color: white;
 } */
 
+
 .bg-form-input-overwright input,
 .bg-form-input-overwright select,
 .bg-form-input-overwright textarea{
-    background: #21211d !important;
-    background-color: #21211d !important;
-    color: white;
+    background-color: #ffffff !important;
+    color: black !important;
 }
 
 .bg-form-input-overwright select option {
     color: #ffffff !important;
-    background: var(--dark) !important;
+    background: var(--light) !important;
 }
 .bg-form-input-overwright input::placeholder,
 .bg-form-input-overwright textarea::placeholder {
-    color: #ffffff !important;
+    color: black !important;
 }
 /* .bg-form-input-overwright #submit_quote:hover {
     background: var(--light);
@@ -734,6 +734,41 @@ h6,
     background: var(--primary);
     color: #fff;
 }
+
+.courses-height{
+    height: 200px;
+}
+.courses-height img{
+    height: 200px;
+    object-fit: cover;
+}
+.project-carousel .project-item .course-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-carousel .project-item .course-info a{
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.project-carousel .project-item .course-info p{
+    font-size: 1.2rem;
+    font-weight: 500 !important;
+}
+.project-carousel .project-item .course-info span{
+    font-size: 1.4rem;
+    font-weight: 700 !important;
+}
+.project-carousel .project-item .course-info span::before {
+    top: 20px;
+}
+
+
 /* 
 .project-carousel .owl-nav {
     position: absolute;
@@ -863,8 +898,9 @@ h6,
 }
 .free-quote #submit_quote {
     background: #b200ff;
+    background: var(--primary);
     border: 1px solid transparent !important;
-    color: #dbd9d9 !important;
+    color: #ffffff !important;
 }
 .free-quote #submit_quote:hover {
     background: var(--dark);
