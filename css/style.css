@@ -749,7 +749,7 @@ h6,
     align-items: center;
 }
 .project-carousel .project-item .course-info a{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -757,15 +757,17 @@ h6,
     padding-bottom: 0 !important;
 }
 .project-carousel .project-item .course-info p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500 !important;
 }
 .project-carousel .project-item .course-info span{
     font-size: 1.4rem;
     font-weight: 700 !important;
 }
-.project-carousel .project-item .course-info span::before {
-    top: 20px;
+.project-carousel .project-item .course-info span::before,
+.project-carousel .project-item .course-info span::after {
+    
+    width: 0;
 }
 
 
