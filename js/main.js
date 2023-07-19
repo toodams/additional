@@ -161,36 +161,36 @@
     });
 
     
-    $(window).on("load resize", function() {
-        if (this.matchMedia("(max-width: 576px)").matches) {
-            console.log('mobile view');
-            var remove_carousel = document.getElementById("remove_carousel");
-            remove_carousel.classList.remove("owl_carousel");
-        }else {
-            $('.project-training').owlCarousel({
-                loop: true,
-                margin: 45,
-                dots: false,
-                loop: true,
-                autoplay: true,
-                smartSpeed: 1000,
-                responsive: {
-                    0:{
-                        items:1
-                    },
-                    576:{
-                        items:1
-                    },
-                    768:{
-                        items:2
-                    },
-                    992:{
-                        items:3
-                    }
-                }
-            });
-        }
-    });
+    // $(window).on("load resize", function() {
+    //     if (this.matchMedia("(max-width: 576px)").matches) {
+    //         console.log('mobile view');
+    //         var remove_carousel = document.getElementById("remove_carousel");
+    //         remove_carousel.classList.remove("owl_carousel");
+    //     }else {
+    //         $('.project-training').owlCarousel({
+    //             loop: true,
+    //             margin: 45,
+    //             dots: false,
+    //             loop: true,
+    //             autoplay: true,
+    //             smartSpeed: 1000,
+    //             responsive: {
+    //                 0:{
+    //                     items:1
+    //                 },
+    //                 576:{
+    //                     items:1
+    //                 },
+    //                 768:{
+    //                     items:2
+    //                 },
+    //                 992:{
+    //                     items:3
+    //                 }
+    //             }
+    //         });
+    //     }
+    // });
     
 })(jQuery);
 
